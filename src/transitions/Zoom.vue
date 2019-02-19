@@ -1,7 +1,7 @@
 <template>
     <transition appear
-        enter-active-class="fadeIn"
-        leave-active-class="fadeOut"
+        enter-active-class="zoomIn"
+        leave-active-class="zoomOut"
         v-bind="$attrs"
         v-on="$listeners">
         <slot/>
