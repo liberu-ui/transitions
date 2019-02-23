@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/laravel-enso/transitions.git"
+    "url": "git+https://github.com/enso-ui/transitions.git"
   },
   "keywords": [
     "transitions",
@@ -17,9 +17,9 @@
   "author": "Adrian Ocneanu <aocneanu@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/laravel-enso/transitions/issues"
+    "url": "https://github.com/enso-ui/transitions/issues"
   },
-  "homepage": "https://github.com/laravel-enso/transitions#readme",
+  "homepage": "https://github.com/enso-ui/transitions#readme",
   "devDependencies": {
     "@vue/eslint-config-airbnb": "^4.0.0",
     "babel-eslint": "^10.0.1",
