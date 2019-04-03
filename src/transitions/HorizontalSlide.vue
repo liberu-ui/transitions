@@ -1,7 +1,7 @@
 <template>
     <transition appear
-        :enter-active-class="'animated ' + (isRTL ? 'slideInLeft' : 'slideInRight' )"
-        :leave-active-class="'animated ' + (isRTL ? 'slideOutLeft' : 'slideOutRight') "
+        :enter-active-class="'animated ' + (isRTL ? 'slideInRight' : 'slideInLeft' )"
+        :leave-active-class="'animated ' + (isRTL ? 'slideOutRight' : 'slideOutLeft') "
         v-bind="$attrs"
         v-on="$listeners">
         <slot/>
