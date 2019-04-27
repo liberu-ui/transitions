@@ -7,3 +7,9 @@
         <slot/>
     </transition>
 </template>
+
+<script>
+export default {
+    name: 'FadeRight',
+};
+</script>
