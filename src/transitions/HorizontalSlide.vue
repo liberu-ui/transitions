@@ -1,7 +1,7 @@
 <template>
     <transition appear
-        :enter-active-class="'animated ' + (isRTL ? 'slideInRight' : 'slideInLeft' )"
-        :leave-active-class="'animated ' + (isRTL ? 'slideOutRight' : 'slideOutLeft') "
+        :enter-active-class="'animated ' + (rtl ? 'slideInRight' : 'slideInLeft' )"
+        :leave-active-class="'animated ' + (rtl ? 'slideOutRight' : 'slideOutLeft') "
         v-bind="$attrs"
         v-on="$listeners">
         <slot/>
@@ -13,7 +13,7 @@ export default {
     name: 'HorizontalSlide',
 
     props:{
-        isRTL:{
+        rtl:{
             type: Boolean,
             default : false,
         }
