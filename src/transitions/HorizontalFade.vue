@@ -1,7 +1,7 @@
 <template>
     <transition appear
-        :enter-active-class="'animated ' + (rtl ? 'fadeInRight' : 'fadeInLeft' )"
-        :leave-active-class="'animated ' + (rtl ? 'fadeOutRight' : 'fadeOutLeft') "
+        :enter-active-class="`animated ${rtl ? 'fadeInRight' : 'fadeInLeft'}`"
+        :leave-active-class="`animated ${rtl ? 'fadeOutRight' : 'fadeOutLeft'}`"
         v-bind="$attrs"
         v-on="$listeners">
         <slot/>
