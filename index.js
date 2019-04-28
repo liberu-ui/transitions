@@ -8,7 +8,9 @@ import SlideRight from './src/transitions/SlideRight.vue';
 import SlideUp from './src/transitions/SlideUp.vue';
 import SlideDown from './src/transitions/SlideDown.vue';
 import Zoom from './src/transitions/Zoom.vue';
+import HorizontalSlide from './src/transitions/HorizontalSlide.vue';
+import HorizontalFade from './src/transitions/HorizontalFade.vue';
 
 export {
-    Fade, SlideLeft, SlideRight, SlideUp, SlideDown, FadeLeft, FadeRight, FadeUp, FadeDown, Zoom,
+    Fade, SlideLeft, SlideRight, SlideUp, SlideDown, FadeLeft, FadeRight, FadeUp, FadeDown, Zoom, HorizontalSlide, HorizontalFade
 };
