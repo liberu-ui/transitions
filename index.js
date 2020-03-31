@@ -12,5 +12,6 @@ import HorizontalSlide from './src/transitions/HorizontalSlide.vue';
 import HorizontalFade from './src/transitions/HorizontalFade.vue';
 
 export {
-    Fade, SlideLeft, SlideRight, SlideUp, SlideDown, FadeLeft, FadeRight, FadeUp, FadeDown, Zoom, HorizontalSlide, HorizontalFade
+    Fade, SlideLeft, SlideRight, SlideUp, SlideDown, FadeLeft,
+    FadeRight, FadeUp, FadeDown, Zoom, HorizontalSlide, HorizontalFade,
 };
