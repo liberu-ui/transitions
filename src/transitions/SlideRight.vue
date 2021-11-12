@@ -1,6 +1,6 @@
 <template>
-    <transition appear
-        v-bind="$attrs"
+    <transition v-bind="$attrs"
+        appear
         enter-active-class="animated slideInRight"
         leave-active-class="animated slideOutRight"
         v-on="$listeners">
