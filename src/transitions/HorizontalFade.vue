@@ -2,8 +2,7 @@
     <transition v-bind="$attrs"
         appear
         :enter-active-class="`animated ${rtl ? 'fadeInRight' : 'fadeInLeft'}`"
-        :leave-active-class="`animated ${rtl ? 'fadeOutRight' : 'fadeOutLeft'}`"
-        v-on="$listeners">
+        :leave-active-class="`animated ${rtl ? 'fadeOutRight' : 'fadeOutLeft'}`">
         <slot/>
     </transition>
 </template>
@@ -12,11 +11,11 @@
 export default {
     name: 'HorizontalFade',
 
-    props:{
-        rtl:{
+    props: {
+        rtl: {
             type: Boolean,
-            default : false,
-        }
-    }
-}
+            default: false,
+        },
+    },
+};
 </script>

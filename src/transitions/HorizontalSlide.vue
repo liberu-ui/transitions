@@ -2,8 +2,7 @@
     <transition v-bind="$attrs"
         appear
         :enter-active-class="`animated ${rtl ? 'slideInRight' : 'slideInLeft'}`"
-        :leave-active-class="`animated ${rtl ? 'slideOutRight' : 'slideOutLeft'}`"
-        v-on="$listeners">
+        :leave-active-class="`animated ${rtl ? 'slideOutRight' : 'slideOutLeft'}`">
         <slot/>
     </transition>
 </template>
@@ -12,11 +11,11 @@
 export default {
     name: 'HorizontalSlide',
 
-    props:{
-        rtl:{
+    props: {
+        rtl: {
             type: Boolean,
-            default : false,
-        }
-    }
-}
+            default: false,
+        },
+    },
+};
 </script>

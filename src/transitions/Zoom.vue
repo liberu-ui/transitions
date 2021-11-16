@@ -2,8 +2,7 @@
     <transition v-bind="$attrs"
         appear
         enter-active-class="animated zoomIn"
-        leave-active-class="animated zoomOut"
-        v-on="$listeners">
+        leave-active-class="animated zoomOut">
         <slot/>
     </transition>
 </template>

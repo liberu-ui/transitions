@@ -2,8 +2,7 @@
     <transition v-bind="$attrs"
         appear
         enter-active-class="animated slideInRight"
-        leave-active-class="animated slideOutRight"
-        v-on="$listeners">
+        leave-active-class="animated slideOutRight">
         <slot/>
     </transition>
 </template>

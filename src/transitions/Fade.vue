@@ -2,8 +2,7 @@
     <transition v-bind="$attrs"
         appear
         enter-active-class="animated fadeIn"
-        leave-active-class="animated fadeOut"
-        v-on="$listeners">
+        leave-active-class="animated fadeOut">
         <slot/>
     </transition>
 </template>
