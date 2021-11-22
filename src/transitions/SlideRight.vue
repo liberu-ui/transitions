@@ -1,28 +1,16 @@
 <template>
   <transition v-bind="$attrs"
     appear
-    enter-active-class="animated slideInRight"
-    leave-active-class="animated slideOutRight">
-    <div v-if="visible">
+    enter-active-class="animate__animated animate__slideInRight"
+    leave-active-class="animate__animated animate__slideOutRight">
       <slot/>
-    </div>
   </transition>
 </template>
 
 <script>
+import 'animate.css';
+
 export default {
   name: 'SlideRight',
-
-  data: () => ({
-    visible: false,
-  }),
-
-  mounted() {
-    this.visible = true;
-  },
-
-  unmounted() {
-    this.visible = false;
-  }
 };
 </script>

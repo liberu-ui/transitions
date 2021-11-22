@@ -1,28 +1,16 @@
 <template>
     <transition v-bind="$attrs"
       appear
-      enter-active-class="animated fadeInDown"
-      leave-active-class="animated fadeOutDown">
-      <div v-if="visible">
+      enter-active-class="animate__animated animate__fadeInDown"
+      leave-active-class="animate__animated animate__fadeOutDown">
         <slot/>
-      </div>
     </transition>
 </template>
 
 <script>
+import 'animate.css';
+
 export default {
     name: 'FadeDown',
-
-    data: () => ({
-      visible: false,
-    }),
-
-    mounted() {
-      this.visible = true;
-    },
-
-    unmounted() {
-      this.visible = false;
-    }
 };
 </script>

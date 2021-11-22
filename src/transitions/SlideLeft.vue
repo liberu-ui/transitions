@@ -1,32 +1,16 @@
 <template>
   <transition v-bind="$attrs"
     appear
-    enter-active-class="animated slideInLeft"
-    leave-active-class="animated slideOutLeft">
-    <div v-if="visible">
+    enter-active-class="animate__animated animate__slideInLeft"
+    leave-active-class="animate__animated animate__slideOutLeft">
       <slot/>
-    </div>
   </transition>
 </template>
 
 <script>
+import 'animate.css';
+
 export default {
   name: 'SlideLeft',
-
-  data: () => ({
-    visible: false,
-  }),
-
-  mounted() {
-    this.visible = true;
-
-    console.log('hit mounted SlideLeft')
-  },
-
-  unmounted() {
-    this.visible = false;
-
-    console.log('hit unmounted SlideLeft')
-  }
 };
 </script>

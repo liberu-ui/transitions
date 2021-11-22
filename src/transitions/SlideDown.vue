@@ -1,28 +1,16 @@
 <template>
     <transition v-bind="$attrs"
       appear
-      enter-active-class="animated slideInDown"
-      leave-active-class="animated slideOutUp">
-      <div v-if="visible">
+      enter-active-class="animate__animated animate__slideInDown"
+      leave-active-class="animate__animated animate__slideOutUp">
         <slot/>
-      </div>
     </transition>
 </template>
 
 <script>
+import 'animate.css';
+
 export default {
   name: 'SlideDown',
-
-  data: () => ({
-    visible: false,
-  }),
-
-  mounted() {
-    this.visible = true;
-  },
-
-  unmounted() {
-    this.visible = false;
-  }
 };
 </script>

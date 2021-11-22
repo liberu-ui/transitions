@@ -1,15 +1,15 @@
 <template>
   <transition v-bind="$attrs"
     appear
-    :enter-active-class="`animated ${rtl ? 'fadeInRight' : 'fadeInLeft'}`"
-    :leave-active-class="`animated ${rtl ? 'fadeOutRight' : 'fadeOutLeft'}`">
-    <div v-if="visible">
+    :enter-active-class="`animate__animated animate__${rtl ? 'fadeInRight' : 'fadeInLeft'}`"
+    :leave-active-class="`animate__animated animate__${rtl ? 'fadeOutRight' : 'fadeOutLeft'}`">
       <slot/>
-    </div>
   </transition>
 </template>
 
 <script>
+import 'animate.css';
+
 export default {
   name: 'HorizontalFade',
 
@@ -19,17 +19,5 @@ export default {
           default: false,
       },
   },
-
-  data: () => ({
-    visible: false,
-  }),
-
-  mounted() {
-    this.visible = true;
-  },
-
-  unmounted() {
-    this.visible = false;
-  }
 };
 </script>

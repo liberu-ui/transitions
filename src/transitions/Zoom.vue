@@ -1,28 +1,16 @@
 <template>
   <transition v-bind="$attrs"
     appear
-    enter-active-class="animated zoomIn"
-    leave-active-class="animated zoomOut">
-    <div v-if="visible">
+    enter-active-class="animate__animated animate__zoomIn"
+    leave-active-class="animate__animated animate__zoomOut">
       <slot/>
-    </div>
   </transition>
 </template>
 
 <script>
+import 'animate.css';
+
 export default {
   name: 'Zoom',
-
-  data: () => ({
-    visible: false,
-  }),
-
-  mounted() {
-    this.visible = true;
-  },
-
-  unmounted() {
-    this.visible = false;
-  }
 };
 </script>

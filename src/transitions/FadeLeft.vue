@@ -1,28 +1,16 @@
 <template>
     <transition v-bind="$attrs"
       appear
-      enter-active-class="animated fadeInLeft"
-      leave-active-class="animated fadeOutLeft">
-      <div v-if="visible">
+      enter-active-class="animate__animated animate__fadeInLeft"
+      leave-active-class="animate__animated animate__fadeOutLeft">
         <slot/>
-      </div>
     </transition>
 </template>
 
 <script>
+import 'animate.css';
+
 export default {
   name: 'FadeLeft',
-
-  data: () => ({
-    visible: false,
-  }),
-
-  mounted() {
-    this.visible = true;
-  },
-
-  unmounted() {
-    this.visible = false;
-  }
 };
 </script>

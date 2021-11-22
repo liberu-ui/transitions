@@ -1,15 +1,15 @@
 <template>
   <transition v-bind="$attrs"
     appear
-    :enter-active-class="`animated ${rtl ? 'slideInRight' : 'slideInLeft'}`"
-    :leave-active-class="`animated ${rtl ? 'slideOutRight' : 'slideOutLeft'}`">
-    <div v-if="visible">
+    :enter-active-class="`animate__animated animate__${rtl ? 'slideInRight' : 'slideInLeft'}`"
+    :leave-active-class="`animate__animated animate__${rtl ? 'slideOutRight' : 'slideOutLeft'}`">
       <slot/>
-    </div>
   </transition>
 </template>
 
 <script>
+import 'animate.css';
+
 export default {
   name: 'HorizontalSlide',
 
@@ -19,17 +19,5 @@ export default {
           default: false,
       },
   },
-
-  data: () => ({
-    visible: false,
-  }),
-
-  mounted() {
-    this.visible = true;
-  },
-
-  unmounted() {
-    this.visible = false;
-  }
 };
 </script>

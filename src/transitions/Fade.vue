@@ -2,32 +2,16 @@
   <transition v-bind="$attrs"
     appear
     mode="in-out"
-    enter-active-class="animated fadeIn"
-    leave-active-class="animated fadeOut">
-    <div v-if="visible">
+    enter-active-class="animate__animated animate__fadeIn"
+    leave-active-class="animate__animated animate__fadeOut">
       <slot/>
-    </div>
   </transition>
 </template>
 
 <script>
+import 'animate.css';
+
 export default {
   name: 'Fade',
-
-  data: () => ({
-    visible: false,
-  }),
-
-  mounted() {
-    console.log('hit mounted')
-    setTimeout(() => this.visible = true, 1000)
-
-  },
-
-  unmounted() {
-    this.visible = false;
-
-    console.log('hit unmounted')
-  }
 };
 </script>
