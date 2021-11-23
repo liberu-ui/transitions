@@ -1,17 +1,19 @@
 <template>
-  <transition v-bind="$attrs"
-    appear
-    mode="in-out"
-    enter-active-class="animate__animated animate__fadeIn"
-    leave-active-class="animate__animated animate__fadeOut">
+  <mirror v-bind="$attrs"
+    effect="fade">
+    <template #default>
       <slot/>
-  </transition>
+    </template>
+  </mirror>
 </template>
 
 <script>
-import 'animate.css';
+import Mirror from './Mirror.vue';
 
 export default {
   name: 'Fade',
-};
+
+  components: { Mirror },
+}
+
 </script>
