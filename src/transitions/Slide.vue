@@ -1,5 +1,5 @@
 <template>
-    <mirror v-bind="$attrs"
+    <mirror
         effect="slide">
         <template #default>
             <slot/>

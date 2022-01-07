@@ -1,5 +1,5 @@
 <template>
-    <transition v-bind="$attrs"
+    <transition
         appear
         :enter-active-class="enterClass"
         :leave-active-class="leaveClass">
