@@ -14,6 +14,6 @@ export default {
     name: 'Slide',
 
     components: { Mirror },
-}
+};
 
 </script>

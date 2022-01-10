@@ -11,10 +11,10 @@
 import 'animate.css';
 
 const directions = {
-    'up': 'Up',
-    'down': 'Down',
-    'left': 'Left',
-    'right': 'Right',
+    up: 'Up',
+    down: 'Down',
+    left: 'Left',
+    right: 'Right',
 };
 
 const effects = ['back', 'bounce', 'fade', 'slide', 'zoom'];
@@ -42,14 +42,7 @@ export default {
             type: String,
             required: true,
             validator: validateEffect,
-        }
-    },
-
-    mounted() {
-        if (['back','slide'].includes(this.effect)
-            && !this.leave && !this.enter) {
-            throw 'Missing direction for the given effect';
-        }
+        },
     },
 
     computed: {
@@ -66,7 +59,14 @@ export default {
                 : '';
 
             return `animate__animated animate__${this.effect}Out${direction}`;
+        },
+    },
+
+    mounted() {
+        if (['back', 'slide'].includes(this.effect)
+            && !this.leave && !this.enter) {
+            throw Error('Missing direction for the given effect');
         }
-    }
+    },
 };
 </script>

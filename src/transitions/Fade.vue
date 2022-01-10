@@ -11,9 +11,9 @@
 import Mirror from './Mirror.vue';
 
 export default {
-  name: 'Fade',
+    name: 'Fade',
 
-  components: { Mirror },
-}
+    components: { Mirror },
+};
 
 </script>
