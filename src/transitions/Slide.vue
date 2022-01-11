@@ -1,6 +1,6 @@
 <template>
     <mirror
-        effect="zoom">
+        effect="slide">
         <template #default>
             <slot/>
         </template>
@@ -11,8 +11,9 @@
 import Mirror from './Mirror.vue';
 
 export default {
-    name: 'Zoom',
+    name: 'Slide',
 
     components: { Mirror },
 };
+
 </script>

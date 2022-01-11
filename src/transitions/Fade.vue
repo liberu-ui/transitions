@@ -1,15 +1,19 @@
 <template>
-    <transition v-bind="$attrs"
-        appear
-        enter-active-class="animated fadeIn"
-        leave-active-class="animated fadeOut"
-        v-on="$listeners">
-        <slot/>
-    </transition>
+  <mirror
+    effect="fade">
+    <template #default>
+      <slot/>
+    </template>
+  </mirror>
 </template>
 
 <script>
+import Mirror from './Mirror.vue';
+
 export default {
     name: 'Fade',
+
+    components: { Mirror },
 };
+
 </script>
