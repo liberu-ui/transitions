@@ -1,5 +1,5 @@
 {
-  "name": "@cgdsoftware/transitions",
+  "name": "@liberu-ui/transitions",
   "version": "2.0.11",
   "description": "A collection of Vue transitions",
   "main": "index.js",
