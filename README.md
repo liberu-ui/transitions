@@ -1,10 +1,10 @@
 # Transitions
 
-![npm license](https://img.shields.io/npm/l/@enso-ui/transitions.svg) 
-![npm download](https://img.shields.io/npm/dm/@enso-ui/transitions.svg) 
-![GitHub top language](https://img.shields.io/github/languages/top/enso-ui/transitions.svg) 
-![GitHub issues](https://img.shields.io/github/issues/enso-ui/transitions.svg) 
-![npm version](https://img.shields.io/npm/v/@enso-ui/transitions.svg) 
+![npm license](https://img.shields.io/npm/l/@liberu-ui/transitions.svg) 
+![npm download](https://img.shields.io/npm/dm/@liberu-ui/transitions.svg) 
+![GitHub top language](https://img.shields.io/github/languages/top/liberu-ui/transitions.svg) 
+![GitHub issues](https://img.shields.io/github/issues/liberu-ui/transitions.svg) 
+![npm version](https://img.shields.io/npm/v/@liberu-ui/transitions.svg) 
 
 A collection of Vue transitions
 
